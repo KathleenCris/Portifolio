@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kathleen Cristina Monteiro Oliveira | Estudante de ADS &amp; Desenvolvedor(a)</title>
+  <meta name="description" content="Portfólio de Kathleen Cristina Monteiro Oliveira, estudante de Análise e Desenvolvimento de Sistemas." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVEGAÇÃO ===== -->
+  <header class="nav">
+    <a href="#inicio" class="nav__brand">KC<span>.</span></a>
+    <!-- Iniciais de Kathleen Cristina — troque se preferir outra combinação -->
+    <nav class="nav__links" id="navLinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#projeto">Projeto</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">Estudante de ADS — Análise e Desenvolvimento de Sistemas</p>
+      <h1 class="hero__title">
+        Transformo problemas do dia a dia<br class="br-desktop" />
+        em sistemas que funcionam.
+      </h1>
+      <p class="hero__subtitle">
+        <!-- EDITE: sua frase de efeito curta -->
+        Na reta final da faculdade, construindo minha base como desenvolvedor(a) um projeto de cada vez.
+      </p>
+      <div class="hero__actions">
+        <a href="#projeto" class="btn btn--primary">Ver meu projeto</a>
+        <a href="#contato" class="btn btn--ghost">Falar comigo</a>
+      </div>
+    </div>
+
+    <!-- Divisor: elemento assinatura (nós conectados, referência a fluxogramas de sistemas) -->
+    <svg class="connector" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="0" y1="30" x2="1200" y2="30" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 10" />
+      <circle cx="120" cy="30" r="4" fill="var(--accent)" />
+      <circle cx="600" cy="30" r="4" fill="var(--accent-2)" />
+      <circle cx="1080" cy="30" r="4" fill="var(--accent)" />
+    </svg>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre" class="section">
+    <div class="section__inner">
+      <p class="eyebrow">01 · Sobre mim</p>
+      <div class="sobre__grid">
+        <div>
+          <h2>Quem está construindo isso</h2>
+          <p>
+            Estou na reta final do curso de Análise e Desenvolvimento de Sistemas,
+            buscando minha primeira oportunidade como desenvolvedor(a). Meu primeiro
+            projeto real nasceu de um motivo bem simples: uma amiga muito querida ia
+            ter um bebê, e eu quis ajudar de um jeito que fizesse sentido pra mim —
+            usando o que estava aprendendo em sala de aula pra resolver um problema
+            de verdade. Criei um site de chá rifa para ajudar a arrecadar parte dos
+            custos da chegada da criança, e foi essa experiência que me mostrou, na
+            prática, o quanto gosto de transformar uma necessidade real em algo que
+            funciona.
+          </p>
+          <p>
+            Ainda estou construindo minha base técnica e sei que tenho muito a
+            aprender — mas cada parte desse projeto foi pensada e testada com
+            cuidado, com atenção a quem realmente ia usar: os convidados da festa.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><span>Formação</span>ADS — previsão de conclusão em 01/2027</li>
+          <li><span>Foco atual</span>HTML, CSS, JavaScript &amp; lógica de programação</li>
+          <li><span>Objetivo</span>Primeira oportunidade como desenvolvedor(a)</li>
+          <li><span>Diferencial</span>Resolvo problemas reais, não só exercícios</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <svg class="connector" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="0" y1="30" x2="1200" y2="30" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 10" />
+    <circle cx="300" cy="30" r="4" fill="var(--accent-2)" />
+    <circle cx="900" cy="30" r="4" fill="var(--accent)" />
+  </svg>
+
+  <!-- ===== PROJETO EM DESTAQUE ===== -->
+  <section id="projeto" class="section section--alt">
+    <div class="section__inner">
+      <p class="eyebrow">02 · Projeto em destaque</p>
+      <h2>Sistema de Sorteio — Chá de Bebê</h2>
+
+      <div class="case">
+        <div class="case__card">
+          <p class="case__label">O desafio</p>
+          <p>
+            Uma amiga muito querida estava esperando um bebê, e a ideia era organizar
+            um chá rifa para ajudar com parte dos custos da chegada da criança. Fazer
+            isso de forma manual, por papel ou grupos de WhatsApp, tornaria difícil
+            acompanhar quem já tinha participado.
+          </p>
+
+          <p class="case__label">A solução</p>
+          <p>
+            Desenvolvi um site simples e direto, onde os convidados podiam ver os
+            números disponíveis e participar da rifa pelo próprio celular, sem
+            precisar instalar nada ou lidar com processos complicados.
+          </p>
+
+          <p class="case__label">Tecnologias</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+
+          <p class="case__label">Meu papel &amp; aprendizados</p>
+          <p>
+            Cuidei de todo o processo sozinho(a), do design à lógica de funcionamento.
+            Como a maioria dos convidados acessou pelo celular, boa parte do meu tempo
+            foi dedicada a deixar a experiência clara e responsiva em telas pequenas,
+            testando até garantir que qualquer pessoa conseguisse participar sem
+            dificuldade, mesmo sem intimidade com tecnologia.
+          </p>
+
+          <p class="case__label">Resultado</p>
+          <div class="stats">
+            <div class="stats__item"><strong>38</strong><span>participantes</span></div>
+            <div class="stats__item"><strong>R$ 760</strong><span>arrecadados</span></div>
+          </div>
+          <p>
+            Um resultado pequeno em números, mas que teve um significado grande pra
+            mim: ver que algo que eu construí ajudou de verdade uma pessoa que eu
+            gosto muito.
+          </p>
+
+          <div class="case__links">
+            <a href="#" class="btn btn--small">Ver site ao vivo ↗</a>
+            <a href="#" class="btn btn--small btn--ghost">Ver código no GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="case__shot">
+          <!-- EDITE: troque por um <img src="screenshot.png" alt="..."> real do seu site -->
+          <img src="imagem.cha.png" alt="Captura de tela do site de sorteio de chá de bebê" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="connector" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="0" y1="30" x2="1200" y2="30" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 10" />
+    <circle cx="200" cy="30" r="4" fill="var(--accent)" />
+    <circle cx="700" cy="30" r="4" fill="var(--accent-2)" />
+    <circle cx="1000" cy="30" r="4" fill="var(--accent)" />
+  </svg>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section id="habilidades" class="section">
+    <div class="section__inner">
+      <p class="eyebrow">03 · Habilidades</p>
+      <h2>O que eu sei fazer hoje</h2>
+      <p class="section__lead">
+        Sendo honesto(a) sobre onde estou: o que já domino e o que estou aprendendo agora.
+      </p>
+
+      <div class="skills">
+        <div class="skills__group">
+          <p class="skills__title">Já domino</p>
+          <div class="tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>Lógica de Programação</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <p class="skills__title">Estudando agora</p>
+          <div class="tags tags--muted">
+            <span>Git &amp; GitHub</span><span>React</span><span>Node.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMAÇÃO ===== -->
+  <section id="formacao" class="section section--alt">
+    <div class="section__inner">
+      <p class="eyebrow">04 · Formação</p>
+      <h2>Trajetória</h2>
+      <ul class="timeline">
+        <li>
+          <span class="timeline__date">2024 – 01/2027</span>
+          <div>
+            <p class="timeline__title">Análise e Desenvolvimento de Sistemas</p>
+            <p class="timeline__desc">Anhanguera (EAD) — previsão de conclusão em janeiro de 2027</p>
+          </div>
+        </li>
+      </ul>
+      <!-- Se tiver algum curso complementar ou certificação, adicione aqui um novo <li> igual ao de cima -->
+
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="section section--contact">
+    <div class="section__inner">
+      <p class="eyebrow">05 · Contato</p>
+      <h2>Vamos conversar?</h2>
+      <p class="section__lead">
+        Estou em busca da minha primeira oportunidade como desenvolvedor(a).
+        Me chama em qualquer um dos canais abaixo.
+      </p>
+      <div class="contact__links">
+        <!-- EDITE: coloque seus links reais -->
+        <a href="mailto:monteirooliveirakathleencristi@gmail.com" class="btn btn--primary">Enviar e-mail</a>
+        <a href="https://www.linkedin.com/in/kathleen-cristina-monteiro-oliveira-93a2b0216" class="btn btn--ghost" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/KathleenCris" class="btn btn--ghost" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Kathleen Cristina Monteiro Oliveira. Feito com HTML, CSS e JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
